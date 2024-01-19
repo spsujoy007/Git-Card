@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,5 +17,20 @@
   }
 }
 
-body {
+/* body {
+  font-family: 'Poppins', sans-serif;
+} */
+
+.mycard{
+  /* background-image: url(../../public/gitcardbg.jpg);
+  background-size: cover; */
+  background-color: black; 
+  padding: 20px;
+}
+
+.tag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
 }
