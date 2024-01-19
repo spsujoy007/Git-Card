@@ -73,20 +73,20 @@ export default function Home() {
               
               <div className=''>
                 <div className='inline-block'>
-                  <p className='text-xs  text-white bg-black font px-3 py-[2px] rounded-full tag'><RiAccountPinCircleFill /> <span className=''>{userData?.login}</span> </p>
+                  <p className='text-xs  text-white bg-black font px-3 py-[2px] rounded-full tag'><RiAccountPinCircleFill /> <span className='-mt-[15px]'>{userData?.login}</span> </p>
                 </div>
                 <h2 className='text-2xl font-semibold text-black'>{userData?.name}</h2>
                 {
-                  userData?.bio?.length > 0 && <p className='flex items-center gap-2 ml-4 mt-2'><FaCircle className='text-xs' /> {userData.bio.length > 80 ? userData?.bio.slice(0,80)+'...':userData.bio}</p>
+                  userData?.bio?.length > 0 && <p className='mt-2'>{userData.bio.length > 80 ? <span className='mt-[15px]'> {userData?.bio.slice(0,80)+'...'}</span> :userData.bio}</p>
                 }
 
-                <div className='mt-6 flex space-x-1'>
+                <div className='mt-20 flex space-x-1'>
                   
-                  <p className=' text-white rounded-sm overflow-hidden inline-block '>
-                    <span className='p-3 bg-white text-black '>Followers:</span> 
-                    <span className='p-3 bg-black'>{userData.followers}</span>
+                  <p className=' text-white  flex rounded-sm overflow-hidden  '>
+                    <span className='p-1  bg-white text-black '>Followers:</span> 
+                    <span className='p-1  bg-black'>{userData.followers}</span>
                   </p>
-                  <p className=' text-white rounded-sm overflow-hidden inline-block '>
+                  <p className='text-white -mt-[60px] rounded-sm overflow-hidden block '>
                     <span className='p-3 bg-white text-black'>Following:</span> 
                     <span className='p-3 bg-black'>{userData.following}</span>
                   </p>
